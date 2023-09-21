@@ -15,6 +15,8 @@
     --cor3: #1D6141;
     --cor4: #006134;
     --cor5: #00331B;
+    --cor6: #00E08E;
+    --cor7: #C1ECCB;
 
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
     --fonte-destaque: 'Bebas Neue', sans-serif;
@@ -29,6 +31,10 @@
 body {
     background-color: var(--cor0);
     font-family: var(--fonte-padrao);
+}
+
+a.externo::after {
+    content: '\00A0\1F517';
 }
 
 header {
@@ -139,7 +145,38 @@ main img.pequena {
     margin: auto;
 }
 
+aside {
+    background-color: var(--cor7);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.425);
+}
+
+aside > h3 {
+    background-color: var(--cor3);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0 -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+aside > ul {
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+    columns: 2;
+}
+
 footer {
     background-color: var(--cor4);
     color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+}
+
+
+footer a {
+    color: var(--cor0);
+    font-weight: bolder;
+    text-decoration: none;
 }
